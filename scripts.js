@@ -2,7 +2,7 @@ function makeRows(rows, cols) {
     const container = document.getElementById("container");
     container.innerHTML = "";
 
-    const containerSize = 600; // in px — make sure it matches CSS
+    const containerSize = 600;
 
     const cellSize = containerSize / cols;
 
@@ -23,7 +23,6 @@ makeRows(16, 16);
 
 document.getElementById("new-grid").onclick = function() {
     let popup = prompt("How big do you want the grid?", "16");
-    let text;
     if (popup == null || popup == "") {
         makeRows(16, 16);
     } else {
