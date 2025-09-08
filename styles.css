@@ -1,8 +1,13 @@
+:root {
+  --container-width: 600px;
+  --container-height: 600px;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    height: 600px;
+    width: var(--container-width);
+    height: var(--container-height);
     border: 1px solid #ccc;
 }
 
@@ -15,4 +20,11 @@
 
 .hover {
     background-color: gray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: var(--container-width);
+    margin: 30px 0;
 }
